@@ -21,7 +21,7 @@ const apiCall = () => {
     .catch((error) => {
       // Better way would be to throw error here and let the client handle (e.g. show error message)
       // Returning empty array for simplicity only!
-      console.log("Error getting messages");
+      console.log(error);
       return [];
     });
 };
